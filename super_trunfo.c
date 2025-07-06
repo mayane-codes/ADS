@@ -1,6 +1,6 @@
 /*
 autor: Mayane Thainá
-data: 01/07/2025
+data: 06/07/2025
 descrição: desenvolvimento de cartas para o jogo super trunfo
 
 
