@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <string.h> // Para comparar strings (strcmp)
 
@@ -58,6 +57,28 @@ void moverRainha(int casas, char direcao[]) {
     }
 }
 
+// -----------------------------------------
+// Cavalo: usa FOR + WHILE (movimento em L)
+// -----------------------------------------
+void moverCavalo() {
+    int movimentosBaixo = 2;
+    int movimentosEsquerda = 1;
+
+    printf("\nMovimento do Cavalo:\n");
+
+    // Primeiro movimento: duas casas para baixo (FOR)
+    for (int i = 0; i < movimentosBaixo; i++) {
+        printf("Baixo\n");
+    }
+
+    // Segundo movimento: uma casa para a esquerda (WHILE)
+    int j = 0;
+    while (j < movimentosEsquerda) {
+        printf("Esquerda\n");
+        j++;
+    }
+}
+
 // -------------------------
 // Função principal
 // -------------------------
@@ -76,6 +97,7 @@ int main() {
     moverTorre(casasTorre, direcaoTorre);
     moverBispo(casasBispo, direcaoBispo);
     moverRainha(casasRainha, direcaoRainha);
+    moverCavalo(); // Movimento do Cavalo em L
 
     return 0;
 }
